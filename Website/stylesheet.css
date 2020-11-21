@@ -5,6 +5,16 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-color: white;
+    color: black;
+}
+
+.dark_mode {
+    background-color: black;
+    color: white;
+}
+
 #body_wrapper {
     height: 100%;
 }
@@ -44,6 +54,13 @@ background: linear-gradient(45deg, rgba(112,49,211,1) 0%, rgba(39,49,242,1) 50%,
 
 #btn_generate {
     margin: 0 0 0 0;
+}
+
+#btn_ui_toggle {
+    position: fixed;
+    bottom: 50px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .vert_center {

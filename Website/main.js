@@ -34,3 +34,7 @@ var list = ["Today it’s up to you to create the peacefulness you long for.",
 function generate_cookie() {
     document.getElementById("fortune_text").innerHTML = list[Math.floor(Math.random()*list.length)];
 }
+
+function ui_toggle() {
+    document.body.classList.toggle("dark_mode")
+}
