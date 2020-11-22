@@ -2,17 +2,26 @@ body, html {
     padding: 0;
     margin: 0;
     height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Calibre', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: white;
+    background: white;
     color: black;
 }
 
+h1 {
+    font-weight: normal;
+    font-size: 50px;
+}
+
 .dark_mode {
-    background-color: black;
+    background: black;
     color: white;
+}
+.light_mode {
+    background: white !important;
+    color: black !important;
 }
 
 #body_wrapper {
@@ -20,7 +29,7 @@ body {
 }
 
 #content_wrapper {
-    padding: 20px 0 20px 0;
+    padding: 20px 0 25px 0;
 }
 
 .full_hor_center {
@@ -29,7 +38,10 @@ body {
 }
 
 .btn {
-    font-size: 20px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     padding: 10px 20px;
     border-style: none;
     border-radius: 100px;
@@ -44,29 +56,37 @@ background: linear-gradient(45deg, rgba(112,49,211,1) 0%, rgba(39,49,242,1) 50%,
 }
 
 .btn:active {
-    background-color: #2782ac;
     box-shadow: 0 0 5px hsla(0, 0%, 0%, 1);
 }
 
 .btn:focus, .btn:active {
     outline: none;
 }
-
+/* 
 #btn_generate {
     margin: 0 0 0 0;
 }
-
-#btn_ui_toggle {
+*/
+#btn_ui_toggle_wrapper {
     position: fixed;
     bottom: 50px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
+#btn_ui_toggle {
+    background: black;
+    color: white;
+}
+
+#fortune_text {
+    font-size: 20px;
+}
+
 .vert_center {
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 40%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }

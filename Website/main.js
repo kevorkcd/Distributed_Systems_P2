@@ -32,9 +32,27 @@ var list = ["Today it’s up to you to create the peacefulness you long for.",
             "You can make your own happiness."]
 
 function generate_cookie() {
+    //var location = "file:///C:/Users/jensj/OneDrive/Dokumenter/Aarhus_University/3_Semester/Distribuerede_Systems/CloudComputing/Distributed_Systems_P2/Website/fortunes.json";
+    var location = "https://reqres.in/api/users";
+    fetch(location)
+        .then(res => res.json())
+        .then(data => console.log(data));
     document.getElementById("fortune_text").innerHTML = list[Math.floor(Math.random()*list.length)];
 }
 
+var dark_mode = false;
+
 function ui_toggle() {
+    var btn = document.getElementById("btn_ui_toggle");
+
     document.body.classList.toggle("dark_mode")
+    btn.classList.toggle("light_mode")
+
+    dark_mode = !dark_mode;
+    if (dark_mode) {
+        btn.innerHTML = "Light Mode";
+    }
+    else {
+        btn.innerHTML = "Dark Mode";
+    }
 }
