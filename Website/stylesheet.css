@@ -7,7 +7,7 @@ body, html {
 
 body {
     background: white;
-    color: black;
+    color: #313131;
 }
 
 h1 {
@@ -16,12 +16,12 @@ h1 {
 }
 
 .dark_mode {
-    background: black;
+    background: #313131;
     color: white;
 }
 .light_mode {
     background: white !important;
-    color: black !important;
+    color: #313131 !important;
 }
 
 #body_wrapper {
@@ -80,7 +80,7 @@ h1 {
 }
 
 #btn_ui_toggle {
-    background: black;
+    background: #313131;
     color: white;
 }
 
