@@ -7,22 +7,22 @@
         <script src="main.js"></script>
     </head>
     <body>
-        <div id="body_wrapper" class="full_hor_center">
-            <div class="vert_center full_hor_center">
+        <div id="body_wrapper" class="hor_center">
+            <div class="vert_center hor_center full_width">
                 <div id="content_wrapper">
                     <h1>Fortune Generator</h1>
                     <button type="button" class="btn" id="btn_generate" onclick="generate_cookie()">
                         Generate Fortune
                     </button>
                 </div>
-                <div id="insert_fortune">
-                    <p id="fortune_text"></p>
+                <div class="cookie" id="fc">
+                    <!-- <img src="https://www.astrology.com/images-US/games/game-fortune-cookie-1.png" alt="Fortune Cookies"> -->
                 </div>
-                <div>
-                    <img src="https://www.astrology.com/images-US/games/game-fortune-cookie-1.png" alt="Fortune Cookies">
+                <div class="cookie" id="insert_fortune">
+                    <p class="vert_center" id="fortune_text"></p>
                 </div>
             </div>
-            <div id="btn_ui_toggle_wrapper" class="full_hor_center">
+            <div id="btn_ui_toggle_wrapper" class="hor_center full_width">
                 <button type="button" class="btn" id="btn_ui_toggle" onclick="ui_toggle()">
                     Dark Mode
                 </button>

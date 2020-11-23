@@ -38,6 +38,8 @@ function generate_cookie() {
         .then(res => res.json())
         .then(data => console.log(data));
     document.getElementById("fortune_text").innerHTML = list[Math.floor(Math.random()*list.length)];
+    document.getElementById("fc").style.display = "none";
+    document.getElementById("insert_fortune").style.display = "block";
 }
 
 var dark_mode = false;
