@@ -53,15 +53,24 @@ h1 {
     background: rgb(112,49,211);
     background: linear-gradient(45deg, rgba(112,49,211,1) 0%, rgba(39,49,242,1) 50%, rgba(5,219,242,1) 100%);
     color: white;
+    transition: font-size .1s, box-shadow .1s;
+}
+
+#btn_wrapper {
+    height: 100px;
 }
 
 .btn:hover {
     /*background-color: #ca814a;*/
     box-shadow: 0 0 10px hsla(0, 0%, 0%, 1);
+    font-size: 14px;
+    transition: font-size .1s, box-shadow .1s;
 }
 
 .btn:active {
-    box-shadow: 0 0 5px hsla(0, 0%, 0%, 1);
+    box-shadow: 0 0 0px hsla(0, 0%, 0%, 1);
+    font-size: 13px;
+    transition: font-size 0.1s, box-shadow 0.1s;
 }
 
 .btn:focus, .btn:active {
@@ -80,7 +89,7 @@ h1 {
 }
 
 #btn_ui_toggle {
-    background: #313131;
+    background: #4b4b4b;
     color: white;
 }
 
