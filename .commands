@@ -26,7 +26,7 @@ If just for one file.
     $ git rm --cached <filename>
 
 Automatically setup website from github - Run in /usr/share/nginx/html
-    $ curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/index.html > index.html && \
+    $ rm * && \
+      curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/index.html > index.html && \
       curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/main.js > main.js && \
-      curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/stylesheet.css > stylesheet.css && \
-      rm 50x.html
+      curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/stylesheet.css > stylesheet.css

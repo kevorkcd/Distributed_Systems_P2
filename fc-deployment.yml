@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fc-deployment
+  labels:
+    app: fc
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: fc
+  template:
+    metadata:
+      labels:
+	app: fc
+  spec:
+    containers
+    - name: fc
+      image: jnsjnsn/fc-front:fc-front
+      ports:
+      - containerPorts: 80

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  website:
+    image: "fc-website:latest"
+    restart: "unless-stopped"
+    ports:
+      - "80:80"
+    volumes:
+      - "/home/jens/fc-website:/root"
+    container_name: "fc-website"
