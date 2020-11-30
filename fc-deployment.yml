@@ -13,9 +13,9 @@ spec:
     metadata:
       labels:
         app: fc
-  spec:
-    containers:
-    - name: fc
-      image: jnsjnsn/fc-front:fc-front
-      ports:
-      - containerPorts: 80
+    spec:
+      containers:
+      - name: fc
+        image: fc-front
+        ports:
+        - containerPorts: 80
