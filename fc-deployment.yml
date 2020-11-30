@@ -12,9 +12,9 @@ spec:
   template:
     metadata:
       labels:
-	app: fc
+	      app: fc
   spec:
-    containers
+    containers:
     - name: fc
       image: jnsjnsn/fc-front:fc-front
       ports:
