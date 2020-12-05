@@ -30,3 +30,14 @@ Automatically setup website from github - Run in /usr/share/nginx/html
       curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/index.html > index.html && \
       curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/main.js > main.js && \
       curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/kevorkcd/Distributed_Systems_P2/main/Website/stylesheet.css > stylesheet.css
+
+Commit and push new docker image.
+Run the docker compose
+    $ docker-compose up
+Change files etc.
+Commit the image
+    $ docker commit fc-front
+Tag the image
+    $ docker tag <container_id> jnsjnsn/fc-front:<tag/version>
+Push the image
+    $ docker push jnsjnsn/fc-front:<tag/version>

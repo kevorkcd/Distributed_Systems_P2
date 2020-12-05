@@ -3,6 +3,7 @@ package main
 import (
   "fmt"
   "time"
+
   vegeta "github.com/tsenart/vegeta/v12/lib"
 )
 
