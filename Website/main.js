@@ -33,10 +33,10 @@ var list = ["Today it’s up to you to create the peacefulness you long for.",
 
 function generate_cookie() {
     //var location = "file:///C:/Users/jensj/OneDrive/Dokumenter/Aarhus_University/3_Semester/Distribuerede_Systems/CloudComputing/Distributed_Systems_P2/Website/fortunes.json";
-    var location = "https://reqres.in/api/users";
-    fetch(location)
-        .then(res => res.json())
-        .then(data => console.log(data));
+    // var location = "https://reqres.in/api/users";
+    // fetch(location)
+    //     .then(res => res.json())
+    //     .then(data => console.log(data));
     document.getElementById("fortune_text").innerHTML = list[Math.floor(Math.random()*list.length)];
     document.getElementById("fc").style.display = "none";
     document.getElementById("insert_fortune").style.display = "block";
