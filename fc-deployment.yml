@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: fc
-        image: jnsjnsn/fc-front:v2
+        image: jnsjnsn/fc-front:v4
         ports:
         - containerPort: 80
