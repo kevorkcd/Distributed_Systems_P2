@@ -19,3 +19,7 @@ spec:
         image: jnsjnsn/fc-front:v4
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            memory: 500Mi
+            cpu: 100m
