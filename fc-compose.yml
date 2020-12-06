@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fc-deployment
+  labels:
+    app: fc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fc
+  template:
+    metadata:
+      labels:
+        app: fc
+    spec:
+      containers:
+        - name: fc
+          image: jnsjnsn/fc-front:v4
+          ports:
+            - containerPort: 80
+          # this is for ressource testing
+          resources:
+            limits:
+              memory: "100Mi"
+              cpu: "0.20"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fc-service
+spec:
+  type: NodePort
+  selector:
+    app: fc
+  ports:
+    - port: 8080
+      targetPort: 80
